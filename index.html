@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farrell | Developer</title>
+    <link rel="icon" href="icon/frlogoicon.svg" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+        .highlight {
+            color: #90ee90; /* yellow-400 in Tailwind CSS */
+        }
+        #about {
+            background-image: url('img/background.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+    <!-- Header -->
+    <header class="bg-gray-800 text-white shadow-lg fixed w-full z-10">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <div>
+                <img src="icon/frlogowhite.svg" alt="Logo" class="h-10">
+            </div>
+            <!-- Navigation -->
+            <nav class="flex space-x-8">
+                <a href="#about" class="text-xl hover:text-gray-300">About</a>
+                <a href="#projects" class="text-xl hover:text-gray-300">Projects</a>
+                <a href="#events" class="text-xl hover:text-gray-300">Events</a>
+                <a href="#contact" class="text-xl hover:text-gray-300">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="h-screen flex items-center justify-center" data-aos="fade-up">
+        <div class="text-center bg-black bg-opacity-50 p-10 rounded-lg">
+            <h2 class="text-5xl font-bold text-gray-100">Hi, I'm <span class="highlight">Farrell </span>Rafee Sudjatmiko.</h2>
+            <p class="mt-6 text-xl text-gray-400 max-w-2xl mx-auto">A computer engineering undergraduate at Institut Teknologi Sepuluh Nopember. I am a passionate developer with ideas in creating intelligent solutions to solve real-world problems. My skills include Python, C++, React, and more. I have a strong background in data science, computer architecture, and operating systems. I am always eager and willing to learn and apply new technologies.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-gray-800 py-16" data-aos="fade-up">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-100">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-12">
+                <!-- Project Card -->
+                <div class="bg-gray-700 rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
+                    <img src="img/rtn.png" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-white">Game - Race Through The Night</h3>
+                        <p class="mt-4 text-lg text-gray-400">A Multi-staged "推しの子"-themed platform game created in C++ using only the graphics.h library.</p>
+                    </div>
+                </div>
+                <div class="bg-gray-700 rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
+                    <img src="img/pti.png" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-white">App - Equation Multi-Converter Calculator</h3>
+                        <p class="mt-4 text-lg text-gray-400">An app that can convert a normal math equation into postfix or bracketed-infix expression using wx as app builder.</p>
+                    </div>
+                </div>
+                <!-- More projects can be added similarly -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Experiences Section -->
+    <section id="events" class="bg-gray-800 py-16" data-aos="fade-up">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-100">Event Experiences</h2>
+            <div class="space-y-12 mt-12">
+                <!-- Event Card -->
+                <div class="bg-gray-700 rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
+                    <img src="img/inochi23.jpg" alt="Event 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-white">INOCHI 2023 : Hate no Nai Tabi</h3>
+                        <p class="mt-4 text-lg text-gray-400">Annual japanese cultural event that has multiple unique pop culture competitions held by the ITS Foreign Language Society. My Role here as a mini-event volunteer has increased the visitor engagement rate by 25%. In this event, I mastered skills such as public speaking and self-confidance.</p>
+                    </div>
+                </div>
+                <div class="bg-gray-700 rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
+                    <img src="img/mage9.png" alt="Event 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-white">MAGE 9 : Build a Better Society with Smart City</h3>
+                        <p class="mt-4 text-lg text-gray-400">Competitions revolving app development, game development, IoT(Internet of Things), and robotics held by the Computer Engineering Department of ITS. My role here as a main event staff has helped crowd controlling during the opening party held in Grand City Mall.</p>
+                    </div>
+                </div>
+                <!-- More events can be added similarly -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section id="contact" class="py-16" data-aos="fade-up">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-100">Contact Info</h2>
+            <div class="max-w-lg mx-auto mt-12 text-center">
+                <p class="text-xl text-gray-400"><strong>Email:</strong> farrellapple28@gmail.com</p>
+                <p class="mt-4 text-xl text-gray-400"><strong>Phone:</strong> (62) 812-5906-5345</p>
+                <p class="mt-4 text-xl text-gray-400"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/farrellmiko" class="text-blue-400 hover:text-blue-600">linkedin.com/in/farrellmiko</a></p>
+                <p class="mt-4 text-xl text-gray-400"><strong>GitHub:</strong> <a href="https://github.com/eruism" class="text-blue-400 hover:text-blue-600">github.com/eruism</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Farrell Rafee Sudjatmiko. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- AOS Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
